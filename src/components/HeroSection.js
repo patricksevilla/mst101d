@@ -1,38 +1,33 @@
-import React from 'react'
-import { Button } from './Button'
-import './HeroSection.css';
+import React from 'react';
 import '../App.css';
-import videoEto from "./videoEto.mp4"
+import { Button } from './Button';
+import './HeroSection.css';
 
 function HeroSection() {
   return (
-    <div>
-        <video src="./videoEto.mp4" autoPlay loop muted>
-            <source src={videoEto} type="video/mp4"></source>
-        </video>
-        <h1>Bulacan State University</h1>
-        <p>Welcome to College of Engineering</p>
-
-        <div className="hero-btns">
-            <Button
-                className='btns'
-                buttonStyle='btn--outline'
-                buttonSize='btn--large'
-            >
-                INSIDE BSU
-            </Button>
-            <Button
-                className='btns'
-                buttonStyle='btn--primary'
-                buttonSize='btn--large'
-                onClick={console.log('hey')}
-            >
-                WATCH THIS <i className='far fa-play-circle' />
-            </Button>
-        </div>      
+    <div className='hero-container'>
+      <video src='/videos/ce.mp4' autoPlay loop muted />
+      <h1>BUILDING TOMORROWS COMMUNITY</h1>
+      <p>A Comprehensive Guide to Civil Engineering Program</p>
+      <div className='hero-btns'>
+        <Button
+          className='btns'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+        >
+          GET STARTED
+        </Button>
+        <Button
+          className='btns'
+          buttonStyle='btn--primary'
+          buttonSize='btn--large'
+          onClick={console.log('hey')}
+        >
+          PICE Hymn <i className='far fa-play-circle' />
+        </Button>
+      </div>
     </div>
-  )
+  );
 }
-export default HeroSection
 
-
+export default HeroSection;

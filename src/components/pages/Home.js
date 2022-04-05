@@ -1,18 +1,17 @@
 import React from 'react';
 import '../../App.css';
+import Cards from '../Cards';
 import HeroSection from '../HeroSection';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Footer from '../Footer';
 
 function Home() {
-    return (
+  return (
     <>
-    <h1>hello</h1>
-    <Router>
-        <Switch>
-          <HeroSection />
-        </Switch>
-    </Router>
+      <HeroSection />
+      <Cards />
+      <Footer />
     </>
- );
+  );
 }
+
 export default Home;
