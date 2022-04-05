@@ -4,7 +4,6 @@ import './HeroSection.css';
 import '../App.css';
 import videoEto from "./videoEto.mp4"
 
-
 function HeroSection() {
   return (
     <div>
@@ -34,6 +33,6 @@ function HeroSection() {
     </div>
   )
 }
-
 export default HeroSection
+
 

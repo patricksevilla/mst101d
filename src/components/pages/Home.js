@@ -12,9 +12,6 @@ function Home() {
           <HeroSection />
         </Switch>
     </Router>
-        
-       
- 
     </>
  );
 }
