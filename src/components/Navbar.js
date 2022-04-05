@@ -35,7 +35,7 @@ function Navbar(){
                     <i className='fab fa-typo3'></i>
                 </Link>
 
-                <div className='menu-icon' onclick={handleClick}>
+                <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times': 'fas fa-bars'}></i>
                 </div>
 
